@@ -1,0 +1,109 @@
+:root {
+  --background: #bbfafa;
+  --h-f-color: #5c63ec;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--background)
+}
+
+header {
+  padding: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: var(--background);
+  color: var(--h-f-color)
+}
+
+h1 {
+  border: 15px solid var(--h-f-color);
+  font-size: 48px;
+  background-color: var(--h-f-color);
+  color: var(--background);
+  width: 50%;
+  text-indent: 25%;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: right;
+}
+
+nav ul li {
+  display: inline-flex;
+  margin-right: 20px;
+  font-size: 25px;
+}
+
+a {
+  color: var(--h-f-color);
+  text-decoration: underline;
+}
+
+p {
+  display: inline;
+  padding: 20px 20px 20px 50px;
+  justify-content: end;
+}
+
+main {
+  display: flex;
+  background-color: #bbfafa;
+}
+
+aside {
+  display: flex;
+  justify-content: end;
+  margin: 20px;
+}
+
+aside h2 {
+  text-align: end;
+  justify-content: end;
+  font-size: 30px;
+  border-right: 6px dotted red;
+  padding: 20px;
+  width: 35%;
+}
+
+footer {
+  padding: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: var(--h-f-color);
+}
+
+footer h2 {
+  font-size: 28px;
+  color: var(--background);
+  text-indent: 15%;
+}
+
+footer ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: right;
+}
+
+footer ul li a{
+  display: inline-flex;
+  margin-right: 25px;
+  font-size: 25px;
+  color: var(--background);
+}
+
+.hero {
+  height: 100px;
+  width: 100%;
+  background-image: url("../images/hero-background-img.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+
+
