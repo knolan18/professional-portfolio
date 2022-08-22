@@ -11,7 +11,7 @@
 
 <!-- Header Block -->
 <header>
-      <h1>Kelly Nolan</h1>
+  <h1>Kelly Nolan</h1>
   <nav>
     <ul>
       <li><a href="#">About Me</a></li>
@@ -27,14 +27,25 @@
 
 <!-- Main Block -->
 <main>
-    <aside class="about-me">
-      <h2>About Me</h2>
-      <p>
+  <div class="flex-container">
+    <section class="column about-me">
+      <h2 class="flex-item-left">About Me</h2>
+      <p class="flex-item-right">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quibusdam eum inventore sequi. Eligendi id esse quis placeat, laborum voluptatem nihil dignissimos quia dolores obcaecati. Iusto, hic incidunt. Asperiores, tenetur!
       <br><br>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates repudiandae numquam id, alias dignissimos tempora, rerum aliquam tempore adipisci delectus assumenda molestias dolor deleniti dicta dolorem facere cum! Ut, porro?
       </p>
-    </aside>
+    </section>
+  </div>  
+  <div class="flex-container">
+    <section class="column work">
+      <h2 class="flex-item-left">Work</h2>
+      <article class="flex-item-right">
+        <img src="./assets/images/hero-background-img.jpg" alt="">
+      </article>
+
+    </section>
+  </div>
 
 
 </main>
@@ -42,13 +53,17 @@
 
 <!-- Footer Block -->
 <footer>
+  <div class="contact-me">
   <h2>Contact Me</h2>
-    <ul>
-      <li><a href="#">818-269-2477</a></li>
-      <li><a href="nolan.kellyeve@gmail.com">Email</a></li>
-      <li><a href="https://github.com/knolan18">Git Hub</a></li>
-      <li><a href="_blank">Resume</a></li>
-    </ul>
+    <nav>
+      <ul>
+        <li><a href="#">818-269-2477</a></li>
+        <li><a href="nolan.kellyeve@gmail.com">Email</a></li>
+        <li><a href="https://github.com/knolan18">Git Hub</a></li>
+        <li><a href="_blank">Resume</a></li>
+      </ul>
+    </nav>
+  </div>
 </footer>
 
 <body>

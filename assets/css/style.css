@@ -13,6 +13,7 @@ body {
   background-color: var(--background)
 }
 
+/* Header Styling {#f0e, 36}*/
 header {
   padding: 20px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -21,18 +22,22 @@ header {
 }
 
 h1 {
+  display: flex;
   border: 15px solid var(--h-f-color);
   font-size: 48px;
   background-color: var(--h-f-color);
   color: var(--background);
   width: 50%;
-  text-indent: 25%;
+  justify-content: center;
 }
 
 nav ul {
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: right;
+  align-items: center;
 }
 
 nav ul li {
@@ -46,24 +51,20 @@ a {
   text-decoration: underline;
 }
 
-p {
-  display: inline;
-  padding: 20px 20px 20px 50px;
-  justify-content: end;
-}
-
+/* Main Styling {#ffcc99, 25}*/
 main {
   display: flex;
   background-color: #bbfafa;
+  flex-direction: column;
 }
 
-aside {
+section {
   display: flex;
   justify-content: end;
   margin: 20px;
 }
 
-aside h2 {
+h2 {
   text-align: end;
   justify-content: end;
   font-size: 30px;
@@ -72,31 +73,54 @@ aside h2 {
   width: 35%;
 }
 
+p {
+  display: flex;
+  padding: 20px 20px 20px 100px;
+}
+
+/* Footer Styling {#ffff99, 40}*/
 footer {
   padding: 20px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  background-color: var(--h-f-color);
+  background-color: var(--background);
+  color: var(--h-f-color)
+}
+
+footer div {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px;
 }
 
 footer h2 {
-  font-size: 28px;
-  color: var(--background);
-  text-indent: 15%;
+  text-align: end;
+  justify-content: end;
+  font-size: 30px;
+  border-right: 6px dotted red;
+  padding: 20px;
+  width: 20%;
 }
 
-footer ul {
+footer nav ul {
   list-style-type: none;
   display: flex;
-  justify-content: right;
+  align-items: center;
+  width: 100%;
+  padding: 15px;
 }
 
-footer ul li a{
-  display: inline-flex;
+footer nav li {
+  align-items: center;
+}
+
+footer nav ul li a{
   margin-right: 25px;
+  justify-content: right;
   font-size: 25px;
-  color: var(--background);
+  color: var(--h-f-color);
 }
 
+/* Hero Styling {#ccff99} */
 .hero {
   height: 100px;
   width: 100%;
@@ -105,5 +129,24 @@ footer ul li a{
   background-position: center;
 }
 
+/* Flexbox Styling {#b3ffff, 20} */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: end;
+}
 
+.flex-item-left {
+  background-color: var(--background);
+  padding: 10px;
+  font-size: 30px;
+  flex: 30%;
+}
 
+.flex-item-right {
+  background-color: var(--background);
+  padding: 10px;
+  font-size: 20px;
+  flex: 70%;
+  text-align: right;
+}
