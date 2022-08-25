@@ -13,7 +13,7 @@ body {
   background-color: var(--background)
 }
 
-/* Header Styling {#f0e, 36}*/
+/* Header Styling */
 header {
   padding: 20px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -51,7 +51,7 @@ a {
   text-decoration: underline;
 }
 
-/* Main Styling {#ffcc99, 37}*/
+/* Main Styling */
 main {
   display: flex;
   background-color: #bbfafa;
@@ -88,6 +88,11 @@ p {
   text-align: center;
   padding: 20px 120px 40px 20px;
   align-items: center;
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
 }
 
 /* Hero Styling */
@@ -409,47 +414,3 @@ p {
     height: 100%;
     color: #025555;
   }
-
-
-Footer Styling {41, 40}
-footer {
-  padding: 20px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  background-color: var(--background);
-  color: var(--h-f-color)
-}
-
-footer div {
-  display: flex;
-  justify-content: space-evenly;
-  margin: 20px;
-}
-
-footer h2 {
-  text-align: end;
-  justify-content: end;
-  font-size: 30px;
-  border-right: 6px dotted red;
-  padding: 20px;
-  width: auto;
-}
-
-footer nav ul {
-  list-style-type: none;
-  display: flex;
-  align-items: center;
-  width: 100%;
-  padding: 15px;
-}
-
-footer nav li {
-  align-items: center;
-  justify-content: space-around;
-}
-
-footer nav ul li a{
-  margin-right: 25px;
-  justify-content: space-between;
-  font-size: 25px;
-  color: var(--h-f-color);
-}
