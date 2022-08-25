@@ -14,57 +14,131 @@
   <h1>Kelly Nolan</h1>
   <nav>
     <ul>
-      <li><a href="#">About Me</a></li>
-      <li><a href="#">Work</a></li>
-      <li><a href="#">Contact Me</a></li>
-      <li><a href="#">Resume</a></li>
+      <li><a href="#about-me">About Me</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#contact-me">Contact Me</a></li>
+      <li><a href="#resume">Resume</a></li>
     </ul>
   </nav>
 </header>
 
 <!-- Hero Block -->
-<div class="hero" alt="purple gradient with lighter purple gradient bubbles"></div>
+<div class="hero" alt="purple gradient with lighter purple gradient bubbles">
+  <p class="hero-text">My Portfolio</p>
+</div>
 
 <!-- Main Block -->
 <main>
-  <div class="flex-container">
-    <section class="column about-me">
-      <h2 class="flex-item-left">About Me</h2>
-      <p class="flex-item-right">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quibusdam eum inventore sequi. Eligendi id esse quis placeat, laborum voluptatem nihil dignissimos quia dolores obcaecati. Iusto, hic incidunt. Asperiores, tenetur!
-      <br><br>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates repudiandae numquam id, alias dignissimos tempora, rerum aliquam tempore adipisci delectus assumenda molestias dolor deleniti dicta dolorem facere cum! Ut, porro?
-      </p>
-    </section>
-  </div>  
-  <div class="flex-container">
-    <section class="column work">
-      <h2 class="flex-item-left">Work</h2>
-      <article class="flex-item-right">
-        <img src="./assets/images/hero-background-img.jpg" alt="">
-      </article>
 
-    </section>
+<!-- About Me Block -->
+<section id="about-me" class="horizontal-block about-me-block">
+  <div class="h-block-title">
+    <h2>About Me</h2>
   </div>
+  <div class="about-me-text">
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. In perspiciatis tenetur aspernatur odit porro ratione nostrum tempore nihil odio repellendus minima eius sed culpa architecto rerum officia esse, id eveniet!
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero recusandae nihil officiis voluptatibus. Unde beatae esse odit illum. Necessitatibus alias tempora natus numquam consequatur illum similique atque. Consequuntur, iusto labore?
+    </p>
+  </div>
+</section>
 
+<!-- Work Block -->
+<section id="work" class="horizontal-block">
+  <div class="h-block-title">
+    <h2>Work</h2>
+  </div>
+  <div class="work-examples">
+    <div class="card my-cats">
+      <a href="">
+        <img src="./assets/images/my-cats.jpg" alt="a black cat, and a black and white cat playing on an orange blanket">
+      </a>
+      <div class="work-titles">
+        <h3>My Cats</h3>
+          <p>
+           CSS/Bulma/JavaScript
+          </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <a href="">
+        <img id="card-2" src="./assets/images/stripes.jpeg" alt="colorful angled stripes" class="small-card">
+      </a>
+      <div class="work-titles">
+        <h3>Colors</h3>
+          <p>
+            MERN-Stack
+          </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <a href="">
+        <img src="./assets/images/HungryHungryStar.bmp" alt="close up of a star" class="small-card">
+      </a>
+      <div class="work-titles">
+        <h3>Star</h3>
+        <p>
+          React/JavaScript
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <a href="">
+        <img src="./assets/images/Van Gogh's Room at Arles.JPG" alt="Van Gogh's Room at Arles painting" class="small-card">
+      </a>
+      <div class="work-titles">
+        <h3>Art</h3>
+          <p>
+            MERN-Stack
+          </p>
+        </div> 
+    </div>
+
+    <div class="card">
+      <a href="">
+        <img src="./assets/images/coliseum.jpg" alt="the Roman Coliseum" class="small-card">
+      </a>
+      <div class="work-titles">
+        <h3>Ancient Rome</h3>
+          <p>
+            Node/IoT
+          </p>
+        </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Me Block -->
+<section id="contact-me" class="horizontal-block contact-block">
+  <div class="h-block-title">
+    <h2>Contact Me</h2>
+  </div>
+  <div class="contact-links">
+    <ul>
+      <li class="contact-type">
+        <a href=""></a>818-269-2477
+      </li>
+      <li class="contact-type">
+        <a href="mailto:nolan.kellyeve@gmail.com" target="_blank">nolan.kellyeve@gmail.com</a>
+      </li>
+      <li class="contact-type">
+        <a href="https://github.com/knolan18">Git Hub</a>
+      </li>
+      <li class="contact-type">
+        <a href="_blank">Resume</a>
+      </li>
+    </ul>
+  </div>
+</div>
+</section>
 
 </main>
 
 
 <!-- Footer Block -->
-<footer>
-  <div class="contact-me">
-  <h2>Contact Me</h2>
-    <nav>
-      <ul>
-        <li><a href="#">818-269-2477</a></li>
-        <li><a href="nolan.kellyeve@gmail.com">Email</a></li>
-        <li><a href="https://github.com/knolan18">Git Hub</a></li>
-        <li><a href="_blank">Resume</a></li>
-      </ul>
-    </nav>
-  </div>
-</footer>
 
 <body>
   

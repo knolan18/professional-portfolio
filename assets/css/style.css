@@ -51,7 +51,7 @@ a {
   text-decoration: underline;
 }
 
-/* Main Styling {#ffcc99, 25}*/
+/* Main Styling {#ffcc99, 37}*/
 main {
   display: flex;
   background-color: #bbfafa;
@@ -68,17 +68,350 @@ h2 {
   text-align: end;
   justify-content: end;
   font-size: 30px;
-  border-right: 6px dotted red;
   padding: 20px;
-  width: 35%;
+}
+
+h3 {
+  display: inline-flex;
+  position: absolute;
+  bottom: 5%;
+  left: 2%;
+  color: darkcyan;
+  font-size: 20px;
+  background-color: cyan;
+  padding: 5px;
+  width: auto;
 }
 
 p {
-  display: flex;
-  padding: 20px 20px 20px 100px;
+  display: inline-flex;
+  text-align: center;
+  padding: 20px 120px 40px 20px;
+  align-items: center;
 }
 
-/* Footer Styling {#ffff99, 40}*/
+/* Hero Styling */
+.hero {
+  height: 75px;
+  width: 100%;
+  background-image: url("../images/hero-background-img.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-text {
+  display: flex;
+  font-size: 30px;
+  justify-content: flex-end;
+  color: var(--background);
+  margin-right: 50px;
+}
+
+/* Flex Styling Block */
+/* About Me Block */
+.about-me-text {
+  width: 75%;
+  padding: 10px;
+  margin-left: 10px;
+  font-size: larger;
+  display: inline-block;
+  text-align: start;
+  color: #025555; 
+}
+
+/* Work Projects Styling */
+.work {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 15px;
+  justify-content: start;
+  padding: 15px;
+}
+
+.work-examples {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0px;
+  margin: 10px;
+  width: 75%;
+}
+
+.card {
+  display: flex;
+  flex-flow: row wrap;
+  position: relative;
+  padding: 0px;
+  border: 5px solid cyan;
+  margin: 10px;
+  width: 30vw;
+  height: 20vw;
+  background: darkcyan;
+  text-align: center;
+}
+
+.card:hover {
+  box-shadow: 10px 10px 10px 10px darkcyan;
+  opacity: 50%;
+}
+
+/* Large Project Card */
+.my-cats {
+  width: 60vw;
+  height: 40vw;
+  margin: 10px;
+}
+
+.my-cats img {
+  width: 60vw;
+  height: 40vw;
+}
+
+/* Small Project Card */
+.small-card {
+  width: 30vw;
+  height: 20vw;
+}
+
+.small-card img {
+  width: 30vw;
+  height: 20vw;
+}
+
+.work h2 {
+  position: absolute;
+  bottom: 3%;
+  left: 3%;
+}
+
+.card h3,
+.work-titles {
+  position: absolute;
+  bottom: 10%;
+  left: 3%;
+  color: #0d4141;
+  font-size: 20px;
+  background-color: #57f3e8;
+  padding: 5px;
+  width: auto;
+}
+
+.work-titles p {
+  position: absolute;
+  bottom: 5%x;
+  left: 2%;
+  color: darkcyan;
+  font-size: 12px;
+  background-color: cyan;
+  padding: 5px;
+}
+
+/* Left Section Titles Block */
+.horizontal-block {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+  height: auto;
+}
+
+.h-block-title {
+  border-right: 5px solid darkcyan;
+  width: 25%;
+  text-align: right;
+  padding: 20px;
+  height: auto;
+  font-size: 25px;
+  color: var(--h-f-color);
+}
+
+/* Contact Block */
+.contact-links {
+  width: 77%;
+  text-align: left;
+  padding: 20px;
+  height: auto;
+  font-size: 20px;
+} 
+.contact-block ul {
+  justify-content: space-between;
+  display: flex;
+  height: 100%;
+  color: #025555;
+}
+.contact-type {
+  display: inline-block;
+  text-align: center;
+  margin: auto;
+}
+
+/* Cards are stacked on top of each other at 768px or smaller */
+@media screen and (max-width: 768px) {
+  
+  .work {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 15px;
+    justify-content: start;
+    padding: 15px;
+  }
+  .work-examples {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: start;
+    align-content: start;
+    padding: 0px;
+    width: 40vw;
+    height: 100%;
+  }
+  
+  .work-titles p {
+    display: inline-flex;
+    position: absolute;
+    bottom: 5%;
+    left: 2%;
+    color: darkcyan;
+    font-size: 12px;
+    background-color: cyan;
+    padding: 5px;
+  }
+  .horizontal-block {
+      display: flex;
+      flex-direction: column wrap;
+      width: 30%%;
+      height: auto;
+  }
+  .h-block-title {
+    display: inline-flex;
+    flex-direction: ;
+    border-right: 5px solid darkcyan;
+    width: 30vw;
+    text-align: right;
+    padding: 15px;
+    height: auto;
+    font-size: 15px;
+  }
+  .my-cats {
+  width: 50vw;
+  }
+  .small-card {
+  width: 50vw;
+  }
+  .contact-links {
+    width: 60vw;
+    text-align: left;
+    padding: 15px;
+    height: auto;
+    font-size: 15px;
+  } 
+  .contact-block ul {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    color: #025555;
+  }
+
+@media screen and (max-width: 560px) {
+  
+  header h1 {
+    display: inline-block;
+    float: left;
+    color: cyan;
+    font-size: 30px;
+    position: relative;
+    align-items: center;
+    bottom: 50%%;
+  }
+  nav {
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    float: right;
+    padding-top: 9px;
+    font-size: 13px;
+  }
+  header nav ul li {
+    display: inline-flex;
+    margin: 5px;
+  }
+  header nav ul li a {
+    color: cyan;
+    font-size: 15px;
+  }
+  .work {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 15px;
+    justify-content: start;
+    padding: 15px;
+  }
+  .work-examples {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: start;
+    align-content: start;
+    padding: 0px;
+    width: 40vw;
+    height: 100%;
+  }
+  .card h3,
+  .work-titles {
+    position: absolute;
+    bottom: 10%;
+    left: 2%;
+    color: darkcyan;
+    font-size: 20px;
+    background-color: cyan;
+    padding: 5px;
+    /* width: auto; */
+  }
+  .work-titles p {
+    display: inline-block;
+    position: absolute;
+    bottom: 5%x;
+    left: 2%;
+    color: darkcyan;
+    font-size: 12px;
+    background-color: cyan;
+    padding: 5px;
+  }
+  .horizontal-block {
+      display: flex;
+      flex-direction: column wrap;
+      width: 30%%;
+      height: auto;
+  }
+  .h-block-title {
+    display: inline-flex;
+    flex-direction: ;
+    border-right: 5px solid darkcyan;
+    width: 30vw;
+    text-align: right;
+    padding: 15px;
+    height: auto;
+    font-size: 15px;
+  }
+  .my-cats {
+  width: 50vw;
+  }
+  .small-card {
+  width: 50vw;
+  }
+  .contact-links {
+    width: 60vw;
+    text-align: left;
+    padding: 15px;
+    height: auto;
+    font-size: 15px;
+  } 
+  .contact-block ul {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    color: #025555;
+  }
+
+
+Footer Styling {41, 40}
 footer {
   padding: 20px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -98,7 +431,7 @@ footer h2 {
   font-size: 30px;
   border-right: 6px dotted red;
   padding: 20px;
-  width: 20%;
+  width: auto;
 }
 
 footer nav ul {
@@ -111,42 +444,12 @@ footer nav ul {
 
 footer nav li {
   align-items: center;
+  justify-content: space-around;
 }
 
 footer nav ul li a{
   margin-right: 25px;
-  justify-content: right;
+  justify-content: space-between;
   font-size: 25px;
   color: var(--h-f-color);
-}
-
-/* Hero Styling {#ccff99} */
-.hero {
-  height: 100px;
-  width: 100%;
-  background-image: url("../images/hero-background-img.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-/* Flexbox Styling {#b3ffff, 20} */
-.flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  text-align: end;
-}
-
-.flex-item-left {
-  background-color: var(--background);
-  padding: 10px;
-  font-size: 30px;
-  flex: 30%;
-}
-
-.flex-item-right {
-  background-color: var(--background);
-  padding: 10px;
-  font-size: 20px;
-  flex: 70%;
-  text-align: right;
 }
