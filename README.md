@@ -39,3 +39,5 @@ The following image shows the web application's appearance and functionality:
 
 ## Link to Deployed Site
 
+https://knolan18.github.io/professional-portfolio/
+
